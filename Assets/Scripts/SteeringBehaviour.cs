@@ -5,6 +5,7 @@ using System.Text;
 using UnityEngine;
 
 [RequireComponent (typeof(Ship))]
+
 public abstract class SteeringBehaviour: MonoBehaviour
 {
     public float weight = 1.0f;

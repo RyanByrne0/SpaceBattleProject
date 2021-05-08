@@ -10,16 +10,26 @@ public class FollowPath : SteeringBehaviour
 
     Vector3 nextWaypoint;
 
+    public Camera cam;
+
     public void Start()
     {
         
+    }
+
+    private void Update()
+    {
+        if (Vector3.Distance(transform.position, path.waypoints[0]) < 25)
+        {
+            cam = Camera.main;
+        }
     }
 
 
     public override Vector3 Calculate()
     {
         nextWaypoint = path.NextWaypoint();
-        if (Vector3.Distance(transform.position, nextWaypoint) < 3)
+        if (Vector3.Distance(transform.position, nextWaypoint) < 25)
         {
             path.AdvanceToNext();
         }
@@ -33,4 +43,6 @@ public class FollowPath : SteeringBehaviour
             return ship.SeekForce(nextWaypoint);
         }
     }
+
+    
 }

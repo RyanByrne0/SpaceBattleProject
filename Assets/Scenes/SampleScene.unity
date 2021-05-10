@@ -1232,7 +1232,7 @@ MonoBehaviour:
   - {fileID: 1060866637}
   - {fileID: 63160934}
   - {fileID: 1453804226}
-  countdown: 90
+  countdown: 60
 --- !u!1 &1185436237
 GameObject:
   m_ObjectHideFlags: 0
@@ -2047,6 +2047,36 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1466446261}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1795319076
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1795319077}
+  m_Layer: 0
+  m_Name: SoloPath2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1795319077
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1795319076}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -187.5, y: 0, z: 670.5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2045834978}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1831298542 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4123142823053614469, guid: 4a99b94fe78680c48a223983df425565,
@@ -2441,6 +2471,7 @@ Transform:
   m_Children:
   - {fileID: 1301037202}
   - {fileID: 1335218808}
+  - {fileID: 1795319077}
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

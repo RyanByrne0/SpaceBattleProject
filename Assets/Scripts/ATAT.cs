@@ -42,24 +42,43 @@ public class ATAT : MonoBehaviour
 
     public void Update()
     {
-
+        Fall();
 
     }
 
+    public float death = 10;
+    public void Fall()
+    {
+        death -= Time.deltaTime;
+        if (gameObject.CompareTag("MainATAT") && death <= 0 && this.transform.rotation.z < 80)
+        {
+            
+            transform.Rotate(0, 0, 11 * Time.deltaTime);
+
+            
+        }
+
+        if (gameObject.CompareTag("MainATAT") && death <= 0)
+        {
+
+            transform.Translate(0, -2.5f * Time.deltaTime, 0);
+        }
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
+    }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+

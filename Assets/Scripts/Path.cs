@@ -11,10 +11,7 @@ public class Path : MonoBehaviour
     public int next = 0;
     public bool looped = true;
 
-    private void Awake()
-    {
-        
-    }
+  
     void Start()
     {
         waypoints.Clear();
@@ -36,7 +33,7 @@ public class Path : MonoBehaviour
         }
     }
 
-    // Update is called once per frame
+   
     void Update(){    }
 
     public Vector3 NextWaypoint()

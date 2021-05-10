@@ -10,7 +10,7 @@ public class FollowPath : SteeringBehaviour
 
     Vector3 nextWaypoint;
 
-    public Camera cam;
+   
 
     public void Start()
     {
@@ -19,10 +19,7 @@ public class FollowPath : SteeringBehaviour
 
     private void Update()
     {
-        if (Vector3.Distance(transform.position, path.waypoints[0]) < 25)
-        {
-            cam = Camera.main;
-        }
+       
     }
 
 

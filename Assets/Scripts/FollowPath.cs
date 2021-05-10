@@ -7,6 +7,7 @@ public class FollowPath : SteeringBehaviour
 {
 
     public Path path;
+    public Path path2;
 
     Vector3 nextWaypoint;
 
@@ -33,6 +34,7 @@ public class FollowPath : SteeringBehaviour
 
         if (!path.looped && path.IsLast())
         {
+            path = path2;
             return ship.ArriveForce(nextWaypoint, 20);
         }
         else

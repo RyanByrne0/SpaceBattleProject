@@ -11,6 +11,8 @@ public class ATAT : MonoBehaviour
 
     public float count = 3;
 
+    public AudioSource shot;
+
     private void OnEnable()
     {
         StartCoroutine(ShootCoroutine());
@@ -21,6 +23,7 @@ public class ATAT : MonoBehaviour
         count -= Time.deltaTime;
         Instantiate(bullet, Cannons[0].transform);
         Instantiate(bullet, Cannons[1].transform);
+        shot.Play();
         
     }
 
@@ -30,7 +33,7 @@ public class ATAT : MonoBehaviour
         {
                 Shooting();
                
-                yield return new WaitForSeconds(Random.Range(2,6));
+                yield return new WaitForSeconds(Random.Range(3,6));
                 
             
             yield return null;
